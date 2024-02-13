@@ -1,0 +1,13 @@
+
+.box{
+    background-color: thistle;
+}
+.offpos{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    height: 40%;
+}
+.parentpos{
+    position: relative;
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <h1 class="text-center mt-3">Enhanced RPG</h1>
+        <div class="container">
+        <div class="row my-4">
+            <div class="col-8"> 
+                <label>Add Person:</label>
+                <div>
+                <input id="names" placeholder="Name here">
+                <button id="add" type="button" class="btn btn-dark">Add Name</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="btn-toolbar parentpos" role="toolbar" aria-label="Toolbar with button groups">
+                    <lable>Group Size:</lable>
+                    <div class="btn-group" role="group" aria-label="First group">
+                      <button id="one" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="btn btn-outline-success">1</button>
+                      <button id="two" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="btn btn-outline-success">2</button>
+                      <button id="three" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="btn btn-outline-success">3</button>
+                      <button id="four" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="btn btn-outline-success">4</button>
+                      <button id="five" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="btn btn-outline-success">5</button>
+                      <button id="six" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="btn btn-outline-success">6</button>
+                      <button id="seven" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="btn btn-outline-success">7</button>
+                      <button id="eight" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="btn btn-outline-success">8</button>
+                      <button id="nine" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="btn btn-outline-success">9</button>
+                      <button id="ten" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="btn btn-outline-success">10</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offpos" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title mt-2" id="offcanvasExampleLabel">Generated Groups:</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr>
+        <div class="offcanvas-body">
+          <div id="groups">
+           
+          </div>
+        </div>
+      </div>
+
+    <div id="namebox" class="container box mt-5">
+        <!-- <div class="row">
+            <div class="col-9">1. NAMEHERE</div>
+            <div class="col"> <button type="button" class="btn btn-outline-danger">Remove</button>
+            </div>
+        </div> -->
+    </div>
+
+   
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/app.js"></script>
+  </body>
+</html>
